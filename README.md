@@ -1,1 +1,5 @@
 # Book-Library-API
+
+Projeto de uma API REST para gerenciar um catálogo de livros  utilizando a linguagem Go. É possível realizar operações como cadastrar livros, listar todos os livros disponíveis, buscar um livro específico pelo seu ID, realizar o checkout de um livro (diminuindo a quantidade disponível no estoque) e registrar o retorno de um livro ao estoque. A aplicação utiliza o framework Gin para a criação e o gerenciamento de rotas HTTP, e o banco de dados SQLite para armazenar os dados dos livros.
+
+O código lida com erros em cada etapa, como validação de dados recebidos, checagem de IDs duplicados ao adicionar um livro e verificação de disponibilidade no estoque antes de processar um checkout. O servidor é configurado para rodar localmente na porta 8080, e o banco de dados SQLite é manipulado por meio do pacote database/sql. Essa implementação é adequada para sistemas simples de gerenciamento de livros, como bibliotecas ou pequenas livrarias, oferecendo uma base sólida e extensível para futuras melhorias.
